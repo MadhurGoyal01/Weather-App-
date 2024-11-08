@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Prata&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  background: #e2d4ff;
+  padding: 20px;
+  /* Adds padding for smaller screens */
+  place-items: center;
+}
+
+/* Default styling for larger screens */
+.container {
+  width: 70%;
+  /* Set a width limit to keep content centered */
+  max-width: 1200px;
+  /* Prevents it from getting too wide */
+  margin: 0 auto;
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 992px) {
+  .container {
+    width: 85%;
+    /* Slightly more compact */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .app {
+    padding: 10px;
+  }
+}
